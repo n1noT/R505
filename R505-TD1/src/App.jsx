@@ -54,7 +54,7 @@ export default function App() {
 
   return (
     <div className="grid h-screen place-content-center bg-slate-900">
-      <Button variant="danger" className={backgroundColor} onClick={() => setIsActive(!isActive)}>Open modal</Button>
+      <Button variant="danger" className={"bg-purple-900"} onClick={() => setIsActive(!isActive)}>Open modal</Button>
       <AnimatePresence>
       {isActive && (
         <motion.div 
@@ -64,7 +64,7 @@ export default function App() {
           exit={{ opacity: 0 }}
         >
           <motion.div 
-            className={`p-8 rounded-lg flex items-center justify-center flex-col gap-8 relative overflow-hidden ${backgroundColor}`}
+            className={`p-8 rounded-lg flex items-center justify-center flex-col gap-8 relative overflow-hidden bg-purple-800`}
             initial={{ scale: 0.8, opacity: 0, rotate: 15 }}
             animate={{ scale: 1, opacity: 1, rotate: 0 }}
             exit={{ scale: 0.8, opacity: 0 }}
